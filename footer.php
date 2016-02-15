@@ -5,7 +5,7 @@
     <div class="row">
 
       <div class="col-sm-3">
-        <a href="/">
+        <a href="#">
           
           <strong>Tutspoint</strong>
         </a>
@@ -16,8 +16,9 @@
       <div class="col-sm-3">
         <h5><span>Subjects & Topics</span></h5>
         <hr class="foot-hr">
-        <p class="small">
-
+        <p>
+          <a href="topics.php">Featured Topics</a><br>
+          <a href="subject.php">Subjects</a><br>
         </p>
       </div>
 
@@ -35,9 +36,9 @@
         <h5><span>Contact & Support</span></h5>
         <hr class="foot-hr">
         <p>
-          <a href="/faq">FAQ</a><br>
-          <a href="/privacy-policy">Privacy Policy</a><br>
-          <a href="/terms">Terms & Conditions</a>
+          <a href="#">FAQ</a><br>
+          <a href="#">Privacy Policy</a><br>
+          <a href="#">Terms & Conditions</a>
         </p>
         <p class="small">
           You can contact me via email: <a href="mailto:#" target="_top">tutspoint.com</a><br>
