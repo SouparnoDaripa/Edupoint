@@ -1,0 +1,4 @@
+1. add reviews
+2. add FAQ
+3. add Terms and Policy
+4. add footer
