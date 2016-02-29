@@ -6,7 +6,26 @@
 include_once('php_includes/check_login_status.php');
 include_once('php_includes/header.php');
 ?>
+<style>.navbar{color:#fff;-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0);-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0);box-shadow: 0 1px 5px rgba(0, 0, 0, 0);transition: all 0.2s ease-in-out;background-color:transparent;}.navbar.active {background: #fff;-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);color: #000;}.navbar li{border:none}.navbar li:first-child{border-left:none}.navbar.active li{border-right: 1px solid #ddd;} .navbar.active li:first-child{border-left: 1px solid #ddd;}</style>
 <script src="js/extras.js"></script>
+<script>
+  $(window).on("scroll", function() {
+    if($(window).scrollTop() > 300) {
+        $(".navbar").addClass("active");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".navbar").removeClass("active");
+    }
+});
+  $(document).ready(function() {
+    $(".navbar li").hover(function() {
+        $(".navbar").addClass("active");
+    },function(){
+     //remove the background property so it comes transparent again (defined in your css)
+       $(".navbar").removeClass("active");
+    });
+  });
+</script>
 </head>
 <body>
     <?php 
